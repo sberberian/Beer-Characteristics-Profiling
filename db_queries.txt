@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS beer_reviews;
+
+CREATE TABLE beer_reviews (
+	Beer_Style VARCHAR(90) NOT NULL,
+	Beer_Name_Full VARCHAR(120) NOT NULL,
+	ABV FLOAT NOT NULL,
+	Min_IBU INT NOT NULL,
+	Max_IBU INT NOT NULL,
+	Astringency INT NOT NULL,
+	Body INT NOT NULL,
+	Alcohol INT NOT NULL,
+	Bitter INT NOT NULL,
+	Sweet INT NOT NULL,
+	Sour INT NOT NULL,
+	Salty INT NOT NULL,
+	Fruits INT NOT NULL,
+	Hoppy INT NOT NULL,
+	Spices INT NOT NULL,
+	Malty INT NOT NULL,
+	review_aroma FLOAT NOT NULL,
+	review_appearance FLOAT NOT NULL,
+	review_palate FLOAT NOT NULL,
+	review_taste FLOAT NOT NULL,
+	review_overall FLOAT NOT NULL,
+	number_of_reviews INT NOT NULL,
+	PRIMARY KEY (Beer_Name_Full)
+);
