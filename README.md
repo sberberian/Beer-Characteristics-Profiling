@@ -1,4 +1,5 @@
-# project-one
+
+# Beer Characteristics Profiling 
 
 ## Overview
 
