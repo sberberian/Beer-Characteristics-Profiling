@@ -14,6 +14,8 @@ The data will be analyzed to understand the what contributes to a high rating fo
 Descriptions to add:
 * Description of the data exploration phase of the project
 * Description of the analysis phase of the project
+prelim feature testing
+prelim 
 
 ## Communication Protocols
 
@@ -21,4 +23,4 @@ Our team has decided on a variety of tools to utilize for the duration of the pr
 
 ## Dashboard
 
-The project's visualization will be created using Tableau. The interactive elements under consideration are changing data based on style and by brewery. Other ideas are to show where each brewery is located on a map
+The project's visualization will be created using Tableau. The interactive elements under consideration are changing data based on style and by brewery. Other ideas are to show where each brewery is located on a map.
