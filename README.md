@@ -19,7 +19,7 @@ Our team has decided on a variety of tools to utilize for the duration of the pr
 
 A supervised machine learning model was chosen as the ideal approach for the flavor profile investigation. Implementing a random forest algorithm will be useful since it will have a less likelihood of overfitting, it can manage many inputs, and it can rank the features easily. The classification model will effectively return the most important characteristics for predicting a popular beer. 
 
-### Preliminary Data Preprocessing
+### Data Preprocessing
 
 #### Feature Selection and Engineering 
 
@@ -30,6 +30,4 @@ To avoid having the analysis skewed by beers with only a few reviews, the datafr
 The target variable, the overall review, was separated into binary values. A successful beer will have a rating greater than or equal to a 4 star score and classified as a 1. If it doesn't meet this criteria it is classified as a 0. 
 
 #### Training and Testing 
-
-Successfully executed
 
