@@ -1,4 +1,3 @@
-
 # Beer Characteristics Profiling 
 
 [Click here for the presentation.](https://docs.google.com/presentation/d/1Rn_7RCTm9UO72irvWF4ho0fOMzaHRWQAoMQVw0SUD4k/edit#slide=id.p)
@@ -24,3 +23,21 @@ Our team has decided on a variety of tools to utilize for the duration of the pr
 ## Dashboard
 
 The project's visualization will be created using Tableau. The interactive elements under consideration are changing data based on style and by brewery. Other ideas are to show where each brewery is located on a map.
+
+## Machine Learning Model
+
+### Model Choice 
+
+A supervised machine learning model was chosen as the ideal approach for the flavor profile investigation. Implementing a random forest algorithm will be useful since it will have a less likelihood of overfitting, it can manage many inputs, and it can rank the features easily. The classification model will effectively return the most important characteristics for predicting a popular beer. 
+
+### Data Preprocessing
+
+#### Feature Selection and Engineering 
+
+After reading in the data and examining the features, there were some that were filtered and others, identified as unnecessary for the model, that were dropped. 
+
+To avoid having the analysis skewed by beers with only a few reviews, the dataframe was refined to include only beers with a number of reviews greater than or equal to the upper quartile.   
+
+The target variable, the overall review, was separated into binary values. A successful beer will have a rating greater than or equal to a 4 star score and classified as a 1. If it doesn't meet this criteria it is classified as a 0. 
+
+#### Training and Testing 
