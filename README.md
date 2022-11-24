@@ -8,13 +8,7 @@ The scope of the project is the flavor profile of successful beers. Since the da
 
 The dataset used, Beer Profile and Ratings dataset, is a combination of two datasets available on Kaggle. The first contains flavor profiles of successful beers and the second contains over a million reviews of beers.
 
-The data will be analyzed to understand the what contributes to a high rating for a beer overall and for specific styles listed in the dataset. Our group also intends to investigate how much the appearance of a beer factors into a very positive review. 
-
-Descriptions to add:
-* Description of the data exploration phase of the project
-* Description of the analysis phase of the project
-prelim feature testing
-prelim 
+The data will be analyzed to understand the what factors correlate with a high rating for the beers listed in the dataset. Our group also intends to investigate how much the appearance of a beer factors into a very positive review. 
 
 ## Communication Protocols
 
