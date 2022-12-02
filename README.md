@@ -32,7 +32,7 @@ A supervised machine learning model was chosen as the ideal approach for the fla
 
 After reading in the data and examining the features, there were some that were filtered and others, identified as unnecessary for the model, that were dropped. 
 
-To avoid having the analysis skewed by beers with only a few reviews, the dataframe was refined to include only beers with a number of reviews greater than or equal to the upper quartile.   
+A correlation plot was created to understand the relationship between number of reviews and overall reviews. There is evidently more noise towards the lower end of number of reviews and an even distribution across the y-axis. This makes sense since beers with less reviews will be tend to be more volatile. To avoid having the analysis skewed by beers with only a few reviews, the dataframe was refined to include only beers with a number of reviews greater than or equal to 500. This is an observable point on the plot that captures a fair amount of data points while isolating data points that could compromise the integrity of the model's output. 
 
 The target variable, the overall review, was separated into binary values. A successful beer will have a rating greater than or equal to a 4 star score and classified as a 1. If it doesn't meet this criteria it is classified as a 0. 
 
