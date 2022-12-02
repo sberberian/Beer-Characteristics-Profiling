@@ -39,3 +39,11 @@ The target variable, the overall review, was separated into binary values. A suc
 #### Training and Testing 
 
 The X variable was defined as all of the attributes, such as bitter, sour, hoppy, etc. The target, the Y variable, was set as the overall rating for a beer. A training and testing set was created for both variables. They were scaled and fit to a random forest classifier model to then return training and testing scores. The features were ranked by importance and plotted. Feature selection from the sklearn library was used to choose the important attributes which replaced the original X variable set and fed back into the model to return new scores.  
+
+## Changes in Model Choice
+
+No changes were made in the entirety of the model, but pieces were refined as the understanding of the dataset has increased. One of the major adjustments made in the model since the Segment 2 deliverable was the plot made to see the distribution of ratings to reviews. This altered the decision about the amount of data inserted into the model. The features represented in the feature selection and the accuracy score have both changed. When the random forest classifier model is fit, the training score is a 1.0 and the testing score is 0.72. However, after the model is fit again using the scaled selected features as X, the testing score drops to 0.64, showing that the model needs more data to perform better. The first model has proven that it functions well and can classify with decent accuracy.
+
+## Additional Training
+
+The next steps will involve analyzing specific beer styles now. The model will be recreated but using a dataset filtered to a certain beer style to see how well that style can be classified. 
