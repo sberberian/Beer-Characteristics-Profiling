@@ -25,3 +25,17 @@ CREATE TABLE beer_reviews (
 	number_of_reviews INT NOT NULL,
 	PRIMARY KEY (Beer_Name_Full)
 );
+
+-- Creating second table and joining
+
+CREATE TABLE public."beer_styles" (
+	style_simple VARCHAR(20) NOT NULL,
+	Beer_Name_Full VARCHAR(120) NOT NULL,
+	PRIMARY KEY (Beer_Name_Full)
+);
+
+SELECT bs.style_simple, bs.full_name, bct.beer_name_full, bct.abv, bct.min_ibu, bct.max_ibu, bct.astringency, bct.body, bct.alcohol, bct.bitter, bct.sweet, bct.sour, bct.salty, bct.fruits, bct.hoppy, bct.spices, bct.malty, bct.review_aroma, bct.review_appearance, bct.review_palate, bct.review_taste, bct.review_overall, bct.number_of_reviews
+INTO even_cleaner_beers
+FROM public."beer_styles" as bs
+LEFT JOIN public."beer_clean_test" as bct
+ON (bct.beer_name_full = bs.full_name);
