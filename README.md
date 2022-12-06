@@ -37,10 +37,20 @@ The classification model will effectively return the most important characterist
 
 After reading in the data and examining the features, some features were filtered while unnecessary features were dropped. 
 
-To avoid having the analysis skewed by beers with only a few reviews, the dataframe was refined to include only beers with a number of reviews in the upper quartile.
+A correlation plot was created to understand the relationship between number of reviews and overall reviews.
+
+To avoid having the analysis skewed by beers with only a few reviews, the dataframe was refined to include only beers with a number of reviews in the upper quartile. There is evidently more noise towards the lower end of number of reviews and an even distribution across the y-axis. This makes sense, since beers with less reviews will be tend to be more volatile. To avoid having the analysis skewed by beers with only a few reviews, the dataframe was refined to include only beers with a number of reviews greater than or equal to 500. This is an observable point on the plot that captures a fair amount of data points while isolating data points that could compromise the integrity of the model's output. 
 
 The target variable, the overall review, was separated into binary values. Our team has determined that a successful beer will have a rating greater than or equal to a 4 star review. If it meets this criterion it is classified as a 1, else it is classified as a 0. 
 
 #### Training and Testing 
 
 The X variable was defined as all of the attributes, such as bitter, sour, hoppy, etc. The target, the Y variable, was set as the overall rating for a beer. A training and testing set was created for both variables. They were scaled and fit to a random forest classifier model to then return training and testing scores. The features were ranked by importance and plotted. Feature selection from the sklearn library was used to choose the important attributes which replaced the original X variable set and fed back into the model to return new scores.  
+
+## Changes in Model Choice
+
+No changes were made in the entirety of the model, but pieces were refined as the understanding of the dataset has increased. One of the major adjustments made in the model since the Segment 2 deliverable was the plot made to see the distribution of ratings to reviews. This altered the decision about the amount of data inserted into the model. The features represented in the feature selection and the accuracy score have both changed. When the random forest classifier model is fit, the training score is a 1.0 and the testing score is 0.72. However, after the model is fit again using the scaled selected features as X, the testing score drops to 0.64, showing that the model needs more data to perform better. The first model has proven that it functions well and can classify with decent accuracy. Originally, when the number of reviews was unfiltered for the model, the model performed better at a testing score of 0.76. Looking at the scatter plot for reviews, this makes sense since there the data with less reviews appear more at extremes and clear points. Cutting those out means the model is forced to reconcile the data closer to the red boundary line and it struggles a bit. 
+
+## Additional Training
+
+The next steps will involve analyzing specific beer styles now. The model will be recreated but using a dataset filtered to a certain beer style to see how well that style can be classified. 
