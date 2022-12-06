@@ -2,7 +2,7 @@
 
 [Click here for the presentation.](https://docs.google.com/presentation/d/1Rn_7RCTm9UO72irvWF4ho0fOMzaHRWQAoMQVw0SUD4k/edit#slide=id.p)
 
-[Click here for the Tableau Public dashboard.](https://public.tableau.com/app/profile/andrew.krieger/viz/BeerStyleAnalysis/Dashboard2)
+[Click here for the Tableau Public dashboard.](https://public.tableau.com/views/BeerStyleAnalysis/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 ## Overview
 
