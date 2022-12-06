@@ -1,3 +1,4 @@
+-- Create initial table for the provisional database.
 DROP TABLE IF EXISTS beer_reviews;
 
 CREATE TABLE beer_reviews (
@@ -26,7 +27,7 @@ CREATE TABLE beer_reviews (
 	PRIMARY KEY (Beer_Name_Full)
 );
 
--- Creating second table and joining
+-- Create a second table and perform a join.
 
 CREATE TABLE public."beer_styles" (
 	style_simple VARCHAR(20) NOT NULL,
