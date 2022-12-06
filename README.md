@@ -2,39 +2,46 @@
 
 [Click here for the presentation.](https://docs.google.com/presentation/d/1Rn_7RCTm9UO72irvWF4ho0fOMzaHRWQAoMQVw0SUD4k/edit#slide=id.p)
 
-[Click here for the Tableau Public dashboard.](https://public.tableau.com/app/profile/andrew.krieger/viz/BeerStyleAnalysis/Distrib_byStyle?publish=yes)
+[Click here for the Tableau Public dashboard.](https://public.tableau.com/views/BeerStyleAnalysis/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 ## Overview
 
-The scope of the project is the flavor profile of successful beers. Since the data analytics program is based in Wisconsin, it seemed like a suitable and fun topic to explore.
+The scope of this project is evaluating the flavor profile of successful beers. Since the data analytics program is based in Wisconsin, it seemed like a suitable and fun topic to explore.
 
-The dataset used, Beer Profile and Ratings dataset, is a combination of two datasets available on Kaggle. The first contains flavor profiles of successful beers and the second contains over a million reviews of beers.
+The dataset used, Beer Profile and Ratings dataset, is a combination dataset found on Kaggle of two other Kaggle datasets. The first contains flavor profiles of successful beers and the second contains over a million reviews of beers.
 
-The data will be analyzed to understand the what factors correlate with a high rating for the beers listed in the dataset. Our group also intends to investigate how much the appearance of a beer factors into a very positive review. 
+The data will be analyzed to understand what factors correlate with a high rating based on data for the beers in the dataset. Our group also intends to investigate how much the appearance of a beer factors into a very positive review. 
 
 ## Communication Protocols
 
-Our team has decided on a variety of tools to utilize for the duration of the project. Github is the resource for filesharing and collaborating on code. A group calendar has been created with Google Calendar to assess availability and schedule meetings to work together. Trello is helping to manage tasks and expectations for the deliverables of each milestone in the project. Slack is being used for messaging between teammates and arranging calls. 
+Our team will utilize a variety of tools for the duration of the project. Github is the resource for filesharing and collaborating on code. A group calendar has been created with Google Calendar to schedule meetings outside of class. Trello is helping to manage tasks and expectations for the deliverables of each milestone in the project. Slack is being used for messaging between teammates and arranging calls. 
 
 ## Dashboard
 
-The project's visualization will be created using Tableau. The interactive elements under consideration are changing data based on style and by brewery. Other ideas are to show where each brewery is located on a map.
+The project's visualization will be created using Tableau. The interactive elements under consideration are filtering and highlighting data by style and review score between visualizations.
 
 ## Machine Learning Model
 
 ### Model Choice 
 
-A supervised machine learning model was chosen as the ideal approach for the flavor profile investigation. Implementing a random forest algorithm will be useful since it will have a less likelihood of overfitting, it can manage many inputs, and it can rank the features easily. The classification model will effectively return the most important characteristics for predicting a popular beer. 
+A supervised machine learning model was chosen as the ideal approach for the analysis. Our team will implement a random forest algorith for the following reasons:
+* Implementing a random forest algorithm will be useful in reducing likelihood of overfitting;
+* it can manage many inputs; and
+* it can rank the features easily.
+
+The classification model will effectively return the most important characteristics for predicting a popular beer.
 
 ### Data Preprocessing
 
 #### Feature Selection and Engineering 
 
-After reading in the data and examining the features, there were some that were filtered and others, identified as unnecessary for the model, that were dropped. 
+After reading in the data and examining the features, some features were filtered while unnecessary features were dropped. 
 
-A correlation plot was created to understand the relationship between number of reviews and overall reviews. There is evidently more noise towards the lower end of number of reviews and an even distribution across the y-axis. This makes sense since beers with less reviews will be tend to be more volatile. To avoid having the analysis skewed by beers with only a few reviews, the dataframe was refined to include only beers with a number of reviews greater than or equal to 500. This is an observable point on the plot that captures a fair amount of data points while isolating data points that could compromise the integrity of the model's output. 
+A correlation plot was created to understand the relationship between number of reviews and overall reviews.
 
-The target variable, the overall review, was separated into binary values. A successful beer will have a rating greater than or equal to a 4 star score and classified as a 1. If it doesn't meet this criteria it is classified as a 0. 
+To avoid having the analysis skewed by beers with only a few reviews, the dataframe was refined to include only beers with a number of reviews in the upper quartile. There is evidently more noise towards the lower end of number of reviews and an even distribution across the y-axis. This makes sense, since beers with less reviews will be tend to be more volatile. To avoid having the analysis skewed by beers with only a few reviews, the dataframe was refined to include only beers with a number of reviews greater than or equal to 500. This is an observable point on the plot that captures a fair amount of data points while isolating data points that could compromise the integrity of the model's output. 
+
+The target variable, the overall review, was separated into binary values. Our team has determined that a successful beer will have a rating greater than or equal to a 4 star review. If it meets this criterion it is classified as a 1, else it is classified as a 0. 
 
 #### Training and Testing 
 

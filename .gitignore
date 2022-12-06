@@ -1,5 +1,6 @@
 # Andrew's ignored files and folders
 Resources/hide/
+exploratory_data_sgb.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
