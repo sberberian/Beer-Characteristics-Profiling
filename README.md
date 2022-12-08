@@ -65,6 +65,7 @@ The first model has proven that it functions well and can classify with decent a
 
 ![confusionmatrix](Resources/confusionmatrix.png)
 
+For precision and sensitivity, the model performed better with unsuccessful beers as opposed to successful ones, but the overall accuracy score is adequate.  
 
 ## Additional Training
 
