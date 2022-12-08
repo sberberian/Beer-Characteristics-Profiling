@@ -69,4 +69,4 @@ For precision and sensitivity, the model performed better with unsuccessful beer
 
 ## Additional Training
 
-The next steps will involve analyzing specific beer styles now. The model will be recreated but using a dataset filtered to a certain beer style to see how well that style can be classified. 
+The next steps to further analyze the data would involve analyzing specific beer styles. The model would be recreated but using a dataset filtered to a certain beer style to see how well that style can be classified. 
