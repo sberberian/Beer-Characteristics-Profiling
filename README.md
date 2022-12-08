@@ -24,12 +24,12 @@ The project's visualization will be created using Tableau. The interactive eleme
 
 ### Model Choice 
 
-A supervised machine learning model was chosen as the ideal approach for the analysis. Our team will implement a random forest algorith for the following reasons:
-* Implementing a random forest algorithm will be useful in reducing likelihood of overfitting;
-* it can manage many inputs; and
-* it can rank the features easily.
+A supervised machine learning model was chosen as the ideal approach for the analysis. Our team implemented a random forest algorithm for the following reasons:
+* It will be useful in reducing likelihood of overfitting
+* It can manage many inputs
+* It can rank the features easily
 
-The classification model will effectively return the most important characteristics for predicting a popular beer.
+The classification model should effectively return the most important characteristics for predicting a popular beer.
 
 ### Data Preprocessing
 
@@ -49,7 +49,16 @@ The X variable was defined as all of the attributes, such as bitter, sour, hoppy
 
 ## Changes in Model Choice
 
-No changes were made in the entirety of the model, but pieces were refined as the understanding of the dataset has increased. One of the major adjustments made in the model since the Segment 2 deliverable was the plot made to see the distribution of ratings to reviews. This altered the decision about the amount of data inserted into the model. The features represented in the feature selection and the accuracy score have both changed. When the random forest classifier model is fit, the training score is a 1.0 and the testing score is 0.72. However, after the model is fit again using the scaled selected features as X, the testing score drops to 0.64, showing that the model needs more data to perform better. The first model has proven that it functions well and can classify with decent accuracy. Originally, when the number of reviews was unfiltered for the model, the model performed better at a testing score of 0.76. Looking at the scatter plot for reviews, this makes sense since there the data with less reviews appear more at extremes and clear points. Cutting those out means the model is forced to reconcile the data closer to the red boundary line and it struggles a bit. 
+No changes were made in the entirety of the model, but pieces were refined as the understanding of the dataset has increased. One of the major adjustments made in the model since the Segment 2 deliverable was the plot made to see the distribution of ratings to reviews. This altered the decision about the amount of data inserted into the model. The features represented in the feature selection and the accuracy score have both changed. When the random forest classifier model is fit, the training score is a 1.0 and the testing score is 0.72. However, after the model is fit again using the scaled selected features as X, the testing score drops to 0.64, showing that the model needs more data to perform better. 
+
+![rfcl](Resources/rfcl.png)
+
+![featureselection](Resources/featureselection.png)
+
+
+The first model has proven that it functions well and can classify with decent accuracy. Originally, when the number of reviews was unfiltered for the model, the model performed better at a testing score of 0.76. Looking at the scatter plot for reviews, this makes sense since the data with less reviews appear more at extremes and clear points further away from the boundary line drawn at 4 stars. Cutting those out means the model is forced to reconcile the data closer to the red boundary line and it struggles a bit more. 
+
+![confusionmatrix](Resources/confusionmatrix.png)
 
 ## Additional Training
 
